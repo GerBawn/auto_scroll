@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body {
+            width: 200px;
+        }
+
+        .title {
+            display: inline-block;
+            width: 80px;
+        }
+
+        p input {
+            width: 100px;
+        }
+    </style>
 </head>
 <body>
-<p>每次滚动<input type="text" id="distance">px</p>
-<p>滚动时间间隔<input type="text" id="interval">秒</p>
-<p><button id="submit">开始</button></p>
+<p><span class="title">每次滚动</span><input type="text" id="distance">px</p>
+<p><span class="title">滚动时间间隔</span><input type="text" id="interval">秒</p>
+<p>
+    <button id="submit">开始</button>
+</p>
 <script src="popup.js"></script>
 </body>
 </html>
